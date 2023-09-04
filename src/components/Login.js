@@ -16,16 +16,12 @@ export default function Login() {
                 </h1>
                 <form className="mt-6">
                     <div className="mb-2">
-                        <label
-                            for="username"
-                            className="block text-sm font-semibold text-gray-800"
-                        >
-                            Username
+                        <label for="username" className="block text-sm font-semibold text-gray-800"
+                        >Username
                         </label>
                         <input
                             type="username"
-                            className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                        />
+                            className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"/>
                     </div>
                     <div className="mb-2">
                         <label for="password" className="block text-sm font-semibold text-gray-800"
@@ -33,11 +29,11 @@ export default function Login() {
                         </label>
                         <input type="password" className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"/>
                     </div>
-                    <a href="#" className="text-xs text-purple-600 hover:underline">
+                    <a href="#" className="text-xs text-purple-800 hover:underline">
                         Forget Password?
                     </a>
                     <div className="mt-6"> 
-                        <a href='/home' className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600">
+                        <a href='/home' className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-green-700 rounded-md hover:bg-green-600 focus:outline-none focus:bg-green-600">
                             Login
                         </a>
                     </div>
@@ -46,7 +42,7 @@ export default function Login() {
                 <p className="mt-8 text-xs font-bold text-center text-gray-700">
                     {" "}
                     Don't have an account? {""}
-                    <a href="#" className="font-medium text-purple-600 hover:underline">
+                    <a href="signup" className="font-medium text-purple-600 hover:underline">
                         Sign up
                     </a>
                 </p>
