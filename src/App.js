@@ -6,9 +6,9 @@ import {
 } from "react-router-dom";
 
 import Login from './components/Login';
-import Navbar from './pages/Navbar';
-import Home from './pages/Home';
-import Contact from './pages/Contact';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Contact from './components/Contact';
 
 function App() {
   return (

@@ -7,8 +7,7 @@ function Home() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div className="Titel">
-         Welcome To React
-         </div>
+        Welcome To React</div>
         <a
           className="App-link"
           href="https://reactjs.org"
