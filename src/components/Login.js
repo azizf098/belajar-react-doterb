@@ -4,10 +4,11 @@ export default function Login() {
     return (
         <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
             <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl shadow-rose-600/40 ring ring-2 ring-purple-600 lg:max-w-xl">
+                <br></br>
             <div className="flex justify-center">
                 <img 
                     alt=""
-                    className="h-16,5 w-16,5"
+                    className="w-full"
                     src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"/>
             </div>
                 <h1 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
@@ -16,13 +17,13 @@ export default function Login() {
                 <form className="mt-6">
                     <div className="mb-2">
                         <label
-                            for="email"
+                            for="username"
                             className="block text-sm font-semibold text-gray-800"
                         >
-                            Email
+                            Username
                         </label>
                         <input
-                            type="email"
+                            type="username"
                             className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                         />
                     </div>
