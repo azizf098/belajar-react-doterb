@@ -15,6 +15,7 @@ class Menu extends Component {
                     <ul className="menu">
                         <li><a href="home">Home</a></li>
                         <li><a href="contact">Contact</a></li>
+                        <li><a href='counter'>Counter</a></li>
                         <li><a href="/">Login</a></li>
                     </ul>
                 </header>
