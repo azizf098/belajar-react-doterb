@@ -5,7 +5,7 @@ class Menu extends Component {
     render() {
         return (
             <div>
-                <header className="header flex justify-center">
+                <header className="header flex">
                 <img 
                     alt=""
                     className="h-14 w-14"
