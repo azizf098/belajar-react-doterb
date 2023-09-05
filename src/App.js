@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import SignUp from './pages/auth/SignUp';
-import Counter from './components/Counter';
+import Counter from './pages/Counter';
 
 function App() {
   return (
