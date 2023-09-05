@@ -2,9 +2,7 @@ import React from 'react';
 
 export default function SignUp() {
     return (
-        <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
             <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl shadow-rose-600/40 ring ring-2 ring-purple-600 lg:max-w-xl">
-                <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
             <div className="flex justify-center">
                 <img 
                     alt=""
@@ -70,6 +68,5 @@ export default function SignUp() {
                     </a>
                 </p>
             </div>
-        </div>
     );
 }

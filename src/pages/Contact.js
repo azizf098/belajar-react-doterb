@@ -13,7 +13,7 @@ const Contact = () => {
             type="text"
             placeholder="Your name"
             name="name"
-            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+            className="px-3 py-3 placeholder-gray-600 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
             required
           />
         </div>
@@ -22,7 +22,7 @@ const Contact = () => {
             type="email"
             placeholder="Email"
             name="email"
-            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+            className="px-3 py-3 placeholder-gray-600 text-gray-800 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
             required
           />
         </div>
@@ -30,7 +30,7 @@ const Contact = () => {
           <textarea
             placeholder="Your message"
             name="message"
-            className="px-20 py-20 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+            className="px-20 py-20 placeholder-gray-600 text-black-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
             required
           />
         </div>

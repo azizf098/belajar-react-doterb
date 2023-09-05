@@ -2,9 +2,7 @@ import React from 'react';
 
 export default function Login() {
     return (
-        <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
-            <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl shadow-rose-600/40 ring ring-2 ring-purple-600 lg:max-w-xl">
-                <br></br>
+            <div className="w-full p-4 m-auto bg-white rounded-md  shadow-xl shadow-red-600/40 ring ring-2 ring-purple-600 lg:max-w-xl">
             <div className="flex justify-center">
                 <img 
                     alt=""
@@ -47,6 +45,5 @@ export default function Login() {
                     </a>
                 </p>
             </div>
-        </div>
     );
 }

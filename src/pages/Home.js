@@ -1,26 +1,25 @@
-import React from 'react';
+import { Carousel } from "@material-tailwind/react";
 
-export default function () {
+export function Home() {
   return (
-      <div
-      className="flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 md:max-w-xl md:flex-row">
+    <Carousel className="rounded-xl">
       <img
-        className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-        src="https://tecdn.b-cdn.net/wp-content/uploads/2020/06/vertical.jpg"
-        alt="" />
-      <div className="flex flex-col justify-start p-6">
-        <h5
-          className="mb-2 text-xl font-medium text-neutral-800 dark:text-neutral-50">
-          Card title
-        </h5>
-        <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
-        </p>
-        <p className="text-xs text-neutral-500 dark:text-neutral-300">
-          Last updated 3 mins ago
-        </p>
-      </div>
-    </div>
+        src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
+        alt="image 1"
+        className="h-full w-full object-cover"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+        alt="image 2"
+        className="h-full w-full object-cover"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
+        alt="image 3"
+        className="h-full w-full object-cover"
+      />
+    </Carousel>
   );
 }
+
+export default Home;
