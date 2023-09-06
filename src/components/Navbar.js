@@ -4,17 +4,17 @@ import {
   Typography,
   IconButton,
 } from "@material-tailwind/react";
- 
+
 export function NavbarDefault() {
   const [openNav, setOpenNav] = React.useState(false);
- 
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 960 && setOpenNav(false),
     );
   }, []);
- 
+
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 bg--300 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
@@ -45,14 +45,17 @@ export function NavbarDefault() {
       </Typography>
     </ul>
   );
- 
+
   return (
     <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
+      <div class="sm:flex sm:items-center sm:justify-between">
       <img 
         alt=""
-        className="w-13 h-12"
-        src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"/>
+        className="h-8 mr-3"
+        src="https://th.bing.com/th/id/OIP.x80UhvL6HqBiVLNgLqDC5AAAAA?pid=ImgDet&w=360&h=360&rs="/>
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Cloverisk.</span>
+        </div>
         <div className="hidden lg:block">{navList}</div>
         <IconButton
           variant="text"

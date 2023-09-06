@@ -2,12 +2,13 @@ import React from 'react';
 
 export default function SignUp() {
     return (
+        <>
             <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl shadow-rose-600/40 ring ring-2 ring-purple-600 lg:max-w-xl">
             <div className="flex justify-center">
                 <img 
                     alt=""
-                    className="w-full"
-                    src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"/>
+                    className="w-14 h-13"
+                    src="https://th.bing.com/th/id/OIP.x80UhvL6HqBiVLNgLqDC5AAAAA?pid=ImgDet&w=360&h=360&rs="/>
             </div>
                 <h1 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
                 Sign Up
@@ -68,5 +69,6 @@ export default function SignUp() {
                     </a>
                 </p>
             </div>
+            </>
     );
 }
