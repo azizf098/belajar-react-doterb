@@ -8,26 +8,21 @@ import {
   import Contact from '../pages/Contact';
   import SignUp from '../pages/auth/SignUp';
   import Counter from '../pages/Counter';
-  import MainLayout from "../components/MainLayout";
-import Header from "../pages/Header";
+  import Header from "../pages/Home";
+import Product from "../pages/Product";
   
   function Router() {
     return (
-      <div>
-      <div className='min-h-full h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8'>
-      <BrowserRouter>
-      <MainLayout>
+      <BrowserRouter> 
           <Routes>
-            <Route path="/contact" element={<Contact/>}/>
-            <Route path="/" element={<Login/>}/>
-            <Route path='/signup' element={<SignUp/>}/>
-            <Route path='/counter' element={<Counter/>}/>
+            <Route path="/" element={<Header/>}/>
+            <Route path="/product" element={<Product/>}/>
+            <Route path="/counter" element={<Counter/>}/>
+            <Route path='/contact' element={<Contact/>}/>
+            <Route path='login' element={<Login/>}/>
+            <Route path="/signup" element={<SignUp/>}/>
           </Routes>
-          </MainLayout>
         </BrowserRouter>
-      </div>
-    </div>
-  
     );
   }
 

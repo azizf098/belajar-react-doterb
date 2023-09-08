@@ -22,14 +22,14 @@ export function NavbarDefault() {
         variant="small"
         color="blue-black"
         className="p-1 font-bold">
-            <a href="home" className="flex items-center">Home</a>
+            <a href="/" className="flex items-center">Home</a>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
         className="p-1 font-bold">
-            <a href="contact" className="flex items-center">Contact</a>
+            <a href="product" className="flex items-center">Product</a>
       </Typography>
       <Typography
         as="li"
@@ -41,7 +41,13 @@ export function NavbarDefault() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-bold"><a href="/" className="flex items-center">Login</a>
+        className="p-1 font-bold"><a href="contact" className="flex items-center">Contact</a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-bold"><a href="login" className="flex items-center">Login</a>
       </Typography>
     </ul>
   );

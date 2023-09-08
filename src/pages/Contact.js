@@ -1,7 +1,10 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 const Contact = () => {
   return (
+    <>
+    <br></br><br></br><br></br>
     <div className="w-full p-5 m-auto bg-white rounded-md shadow-xl shadow-blue-600/40 ring ring-2 ring-green-600 lg:max-w-xl">
       <div className="mb-3 pt-0">
         <h3 className="text-center text-gray-800 font-bold text-s">Contact Us</h3>
@@ -44,6 +47,9 @@ const Contact = () => {
         </div>
         </form>
     </div>
+    <br></br>
+    <Footer/>
+    </>
   );
 };
 

@@ -14,13 +14,16 @@ export function Footer() {
                     <a href="/" class="mr-4 hover:underline font-bold md:mr-6 ">Home</a>
                 </li>
                 <li>
-                    <a href="/produk" class="mr-4 hover:underline font-bold md:mr-6">Contact</a>
+                    <a href="/product" class="mr-4 hover:underline font-bold md:mr-6">Product</a>
                 </li>
                 <li>
-                    <a href="/profile" class="mr-4 hover:underline font-bold md:mr-6 ">Counter</a>
+                    <a href="/counter" class="mr-4 hover:underline font-bold md:mr-6 ">Counter</a>
                 </li>
                 <li>
-                    <a href="/contact" class="hover:underline font-bold">Login</a>
+                    <a href="/contact" class="mr-4 hover:underline font-bold md:mr-6 ">Contact</a>
+                </li>
+                <li>
+                    <a href="/login" class="hover:underline font-bold">Login</a>
                 </li>
             </ul>
         </div>

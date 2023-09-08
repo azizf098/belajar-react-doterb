@@ -1,8 +1,10 @@
 import React from 'react';
+import Footer from '../../components/Footer';
 
 export default function Login() {
     return (
         <>
+        <br></br><br></br><br></br>
             <div className="w-full p-6 m-auto bg-white rounded-md  shadow-xl shadow-red-600/40 ring ring-2 ring-purple-600 lg:max-w-xl">
             <div className="flex justify-center">
                 <img 
@@ -46,6 +48,8 @@ export default function Login() {
                     </a>
                 </p>
             </div>
+            <br></br>
+            <Footer/>
             </>
     );
 }
