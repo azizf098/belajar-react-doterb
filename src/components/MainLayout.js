@@ -1,6 +1,6 @@
 import { Navbar } from '@material-tailwind/react';
 import React from 'react';
-import Header from '../pages/Home';
+import Header from '../pages/LandingPage';
 import Footer from './Footer';
 
 const MainLayout =({children}) =>{

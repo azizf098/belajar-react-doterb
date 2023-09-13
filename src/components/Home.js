@@ -1,10 +1,9 @@
 import React from "react";
-import Footer from "../components/Footer";
 
-export function Header() {
-    return (
-      <>
-      <div className="w-full">
+export function Home() {
+    return(
+        <>
+         <div className="w-full">
  <div className="relative mx-auto flex flex-col px-4 sm:max-w-xl md:max-w-screen-xl md:flex-row">
    <div className="my-auto mx-auto mt-8 w-full max-w-xl md:mt-56 lg:max-w-screen-xl ">
      <div className="mb-16 lg:mb-0 lg:max-w-lg">
@@ -57,7 +56,7 @@ export function Header() {
    <div className="flex items-center justify-between">
      <p>
        <span className="text-3xl font-bold text-slate-900">$12</span>
-       <span className="text-sm text-slate-900 line-through">$20</span>
+       <span className="text-sm text-slate-900 line-through"> $20</span>
      </p>
    </div>
  </div>
@@ -123,8 +122,8 @@ export function Header() {
  </div>
 </div>
 </div>
-<Footer/>
-</>
-   )
+        </>
+    )
 }
-export default Header;
+
+export default Home;

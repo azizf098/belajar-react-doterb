@@ -8,8 +8,8 @@ import {
   import Contact from '../pages/Contact';
   import SignUp from '../pages/auth/SignUp';
   import Counter from '../pages/Counter';
-  import Header from "../pages/Home";
-import Product from "../pages/Product";
+  import Header from "../pages/LandingPage";
+  import Product from "../pages/Product";
   
   function Router() {
     return (
