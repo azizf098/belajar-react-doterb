@@ -1,9 +1,9 @@
 import React from "react";
-import Footer from "../components/Footer";
+import Footer from "./landing-page/components/Footer/Footer";
 
 export function Product() {
     return (
-        <>
+        <div>
         <br></br>
         <center>
         <h2 className="bg-teal-accent-400 mb-2 inline-block rounded-full px-3 py-px text-lg-20 font-semibold uppercase tracking-wider text-red-900">List Product</h2>
@@ -85,7 +85,7 @@ export function Product() {
 </div>
 </div>
 <Footer/>
-</>
+</div>
     )
 }
 

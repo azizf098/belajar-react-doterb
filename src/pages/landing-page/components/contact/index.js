@@ -1,9 +1,9 @@
 import React from "react";
-import Footer from "../components/Footer";
+import Footer from "../Footer/Footer";
 
 const Contact = () => {
   return (
-    <>
+    <div>
 <div class="container my-24 mx-auto md:px-6">
   <section class="mb-32">
     <div class="flex justify-center">
@@ -152,7 +152,7 @@ const Contact = () => {
 </div>
     <br></br>
     <Footer/>
-    </>
+    </div>
   );
 };
 

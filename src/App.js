@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import Footer from './components/Footer';
+import Footer from './pages/landing-page/components/Footer/Footer';
 import Navbar from './components/Navbar'
 import  MainLayout from './components/MainLayout';
 

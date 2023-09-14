@@ -1,9 +1,9 @@
 import React from 'react';
-import Footer from '../../components/Footer';
+import Footer from '../landing-page/components/Footer/Footer';
 
 export default function SignUp() {
     return (
-        <>
+        <div>
         <br></br><br></br><br></br>
             <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl shadow-rose-600/40 ring ring-2 ring-purple-600 lg:max-w-xl">
             <div className="flex justify-center">
@@ -73,6 +73,6 @@ export default function SignUp() {
             </div>
             <br></br>
             <Footer/>
-            </>
+            </div>
     );
 }

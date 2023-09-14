@@ -2,7 +2,7 @@ import React from "react";
 
 export function Home() {
     return(
-        <>
+        <div>
          <div className="w-full">
  <div className="relative mx-auto flex flex-col px-4 sm:max-w-xl md:max-w-screen-xl md:flex-row">
    <div className="my-auto mx-auto mt-8 w-full max-w-xl md:mt-56 lg:max-w-screen-xl ">
@@ -122,7 +122,7 @@ export function Home() {
  </div>
 </div>
 </div>
-        </>
+        </div>
     )
 }
 

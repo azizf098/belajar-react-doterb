@@ -1,10 +1,10 @@
 import React from "react";    
-import Home from "../components/Home"
-import Contact from "./Contact";
+import Home from "./components/Home/Home"
+import Contact from "./components/contact/index";
 
 export function Header() {
     return (
-      <>
+      <div>
       <Home/>
 <center> <hr className="mb-4 h-1.5 w-1/4 bg-gray-600" /></center>
 <section className="bg-white border-b py-8">
@@ -72,7 +72,7 @@ export function Header() {
       </div>
     </section>
     <Contact/>
-</>
-   )
+</div>
+)
 }
 export default Header;

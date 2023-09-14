@@ -1,5 +1,5 @@
 import React, { useState } from "react";	
-import Footer from "../components/Footer";
+import Footer from "./landing-page/components/Footer/Footer";
 
 const Counter = () => {
 // Counter is a state initialized to 0
@@ -21,7 +21,7 @@ const reset = () => {
 }
 
 return (
-	<>
+	<div>
 	<br></br><br></br><br></br>
 		<div className="w-full p-5 m-auto bg-white rounded-md shadow-xl shadow-red-600/40 ring ring-2 ring-blue-600 lg:max-w-xl">
 		<div className="mb-3 pt-0">
@@ -45,7 +45,7 @@ return (
 		</div>
 		<br></br>
 		<Footer/>
-		</>
+		</div>
 );
 
 }
