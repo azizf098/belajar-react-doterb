@@ -1,5 +1,5 @@
 import React, { useState } from "react";	
-import Footer from "./landing-page/components/Footer/Footer";
+import Footer from "./landing-page/components/Footer";
 
 const Counter = () => {
 // Counter is a state initialized to 0

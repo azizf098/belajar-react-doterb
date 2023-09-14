@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../landing-page/components/Footer/Footer';
+import Footer from '../landing-page/components/Footer';
 
 export default function SignUp() {
     return (
