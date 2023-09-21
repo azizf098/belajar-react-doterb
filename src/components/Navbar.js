@@ -35,6 +35,13 @@ export function NavbarDefault() {
         as="li"
         variant="small"
         color="blue-gray"
+        className="p-1 font-bold">
+            <a href="shop" className="flex items-center">Shop</a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
         className="p-1 font-bold "><a href="counter" className="flex items-center">Counter</a>
       </Typography>
       <Typography
