@@ -11,8 +11,10 @@ import {
   import Header from "../pages/landing-page/index";
   import Product from "../pages/landing-page/components/product/index";
   import Store from "../pages/landing-page/components/store/index";
+  import Cart from "../pages/landing-page/components/cart/index";
   
   function Router() {
+
     return (
       <BrowserRouter> 
           <Routes>
@@ -23,6 +25,7 @@ import {
             <Route path='login' element={<Login/>}/>
             <Route path="/signup" element={<SignUp/>}/>
             <Route path="/shop" element={<Store/>}/>
+            <Route path="/cart" element={<Cart/>}/>
           </Routes>
         </BrowserRouter>
     );

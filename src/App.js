@@ -1,7 +1,5 @@
 import { Component } from 'react';
-import Footer from './pages/landing-page/components/Footer';
 import Navbar from './components/Navbar'
-import  MainLayout from './components/MainLayout';
 
 class App extends Component {
   render()  {

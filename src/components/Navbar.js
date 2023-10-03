@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  Navbar,
-  Typography,
-  IconButton,
-} from "@material-tailwind/react";
+import { Navbar, Typography, IconButton } from "@material-tailwind/react";
 
 export function NavbarDefault() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -11,7 +7,7 @@ export function NavbarDefault() {
   React.useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false),
+      () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
 
@@ -21,40 +17,61 @@ export function NavbarDefault() {
         as="li"
         variant="small"
         color="blue-black"
-        className="p-1 font-bold">
-            <a href="/" className="flex items-center">Home</a>
+        className="p-1 font-bold"
+      >
+        <a href="/" className="flex items-center">
+          Home
+        </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-bold">
-            <a href="product" className="flex items-center">Product</a>
+        className="p-1 font-bold"
+      >
+        <a href="cart" className="flex items-center">
+          Cart
+        </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-bold">
-            <a href="shop" className="flex items-center">Shop</a>
+        className="p-1 font-bold"
+      >
+        <a href="shop" className="flex items-center">
+          Shop
+        </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-bold "><a href="counter" className="flex items-center">Counter</a>
+        className="p-1 font-bold "
+      >
+        <a href="counter" className="flex items-center">
+          Counter
+        </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-bold"><a href="contact" className="flex items-center">Contact</a>
+        className="p-1 font-bold"
+      >
+        <a href="contact" className="flex items-center">
+          Contact
+        </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-bold"><a href="login" className="flex items-center">Login</a>
+        className="p-1 font-bold"
+      >
+        <a href="login" className="flex items-center">
+          Login
+        </a>
       </Typography>
     </ul>
   );
@@ -62,12 +79,15 @@ export function NavbarDefault() {
   return (
     <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
-      <div class="sm:flex sm:items-center sm:justify-between">
-      <img 
-        alt=""
-        className="h-8 mr-3"
-        src="https://th.bing.com/th/id/OIP.x80UhvL6HqBiVLNgLqDC5AAAAA?pid=ImgDet&w=360&h=360&rs="/>
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Cloverisk.</span>
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <img
+            alt=""
+            className="h-8 mr-3"
+            src="https://th.bing.com/th/id/OIP.x80UhvL6HqBiVLNgLqDC5AAAAA?pid=ImgDet&w=360&h=360&rs="
+          />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            Cloverisk.
+          </span>
         </div>
         <div className="hidden lg:block">{navList}</div>
         <IconButton
