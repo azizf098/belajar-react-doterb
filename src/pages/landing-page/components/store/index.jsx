@@ -1,18 +1,35 @@
-import React from "react";
-import Footer from "../footer/index"
-import { useDeleteProducts, useGetProducts } from "../../../../api/product"; 
+import React, { useContext } from "react";
+import Footer from "../footer/index";
+import { ProductContext } from "../../../../api/ProductContext";
+import { useDeleteProduct } from "../../../../api/product";
+import { Link } from "react-router-dom";
+import { BsFillTrash3Fill } from "react-icons/bs";
+import { CartContext } from "../../../../api/CartContext";
 
 function Shop(hasMargin) {
-  const { data: products, isLoading } = useGetProducts(); 
-  const deleteProduct  = useDeleteProducts();
-  
-  if (isLoading) { 
+  const { products, isLoading } = useContext(ProductContext);
+  const deleteProduct = useDeleteProduct();
+  console.log(products)
+  const { addToCart } = useContext(CartContext);
+
+  const filteredProducts = products.filter((item) => {
+    return item;
+  });
+  if (isLoading) {
     return (
-      <center>
+      <div>
         <br></br>
-        <span>Loading...</span>
-      </center>
-    ); 
+        <br></br>
+        <br></br>
+        <div class="flex justify-center items-center h-full">
+          <img
+            class="h-16 w-16"
+            src="https://icons8.com/preloaders/preloaders/1488/Iphone-spinner-2.gif"
+            alt=""
+          />
+        </div>
+      </div>
+    );
   }
 
   const handleDeleteProduct = (productId) => {
@@ -28,34 +45,30 @@ function Shop(hasMargin) {
         <hr className="mb-4 h-1.5 w-1/4 bg-green-300" />
       </center>
       <div className="grid md:grid-cols-3 gap-8 mt-10 pl-5">
-        {products.map((produk) => {
+        {filteredProducts.map((produk) => {
           return (
             <div
               className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
               key={produk.id}
             >
-              <button onClick={() => handleDeleteProduct(produk.id)}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-8 w-8 cursor-pointer pt-2 pr-3 duration-150 hover:text-red-500"
-              style={hasMargin ? ({ marginLeft: '22rem' }) : ({})}
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
+              <div
+                className="flex justify-center items-right text-black h-15 w-15 cursor-pointer pt-2 pr-3 duration-150 hover:text-red-500"
+                style={hasMargin ? { marginLeft: "22rem" } : {}}
+              >
+                <button onClick={() => handleDeleteProduct(produk.id)}>
+                  <BsFillTrash3Fill className="text-3x1 right-item" />
+                </button>
+              </div>
+              <Link to={`/singleproduk/${produk.id}`}>
               <img
                 className="rounded-t-lg object-contain h-48 w-96 pt-6"
                 src={produk.image}
               />
+              </Link>
               <div className="mt-5 px-6 pb-6">
+              <h5 className="text-sm capitalize text-gray-700 mb-1">
+                  {produk.category}
+                </h5>
                 <h5 className="text-xl font-semibold tracking-tight text-slate-900">
                   {produk.title.substring(0, 21) + "..."}
                 </h5>
@@ -113,20 +126,20 @@ function Shop(hasMargin) {
                   <span className="text-3xl font-bold text-gray-900 dark:text-white">
                     ${produk.price}
                   </span>
-                  <button 
-                  onClick={() => (produk.id)}
-                    className="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
-                  >
-                    Add to cart
-                  </button>
+                    <button onClick={() => addToCart(filteredProducts)}
+                      className="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                      Add To Cart
+                    </button>
                 </div>
               </div>
-            </div>   
+            </div>
           );
         })}
       </div>
-      <br></br><br></br>
-      <Footer/>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Footer />
     </div>
   );
 }

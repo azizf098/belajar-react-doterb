@@ -3,9 +3,6 @@ import React from "react";
 export function Footer(hasMargin) {
   return (
     <div>
-      <center>
-        <hr className="mb-4 h-1.5 w-1/4 bg-gray-400" />
-      </center>
       <footer
         className="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left"
         style={hasMargin ? { marginLeft: "5rem" } : {}}
@@ -125,7 +122,7 @@ export function Footer(hasMargin) {
 
         {/* <!--Copyright section--> */}
         <div className="bg-neutral-200 p-6 text-center dark:bg-neutral-700">
-          <span>© 2023 Copyright:</span>
+          <span>© 2023</span>
           <a
             className="font-semibold text-neutral-600 dark:text-neutral-400"
             href="https://tailwind-elements.com/"

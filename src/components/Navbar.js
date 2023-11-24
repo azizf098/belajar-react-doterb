@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Typography, IconButton } from "@material-tailwind/react";
+import { BsFillCartFill } from "react-icons/bs"
 
 export function NavbarDefault() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -29,28 +30,8 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-bold"
       >
-        <a href="cart" className="flex items-center">
-          Cart
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-bold"
-      >
         <a href="shop" className="flex items-center">
           Shop
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-bold "
-      >
-        <a href="counter" className="flex items-center">
-          Counter
         </a>
       </Typography>
       <Typography
@@ -61,6 +42,16 @@ export function NavbarDefault() {
       >
         <a href="contact" className="flex items-center">
           Contact
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-bold"
+      >
+        <a href="cart" className="flex items-center h-15 w-15">
+          <BsFillCartFill/>
         </a>
       </Typography>
       <Typography

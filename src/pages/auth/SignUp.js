@@ -4,7 +4,7 @@ import Footer from "../landing-page/components/footer";
 export default function SignUp() {
   return (
     <div>
-      <br></br><br></br><br></br>
+      <br></br><br></br>
       <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl shadow-rose-600/40 ring ring-2 ring-purple-600 lg:max-w-xl">
         <div className="flex justify-center">
           <img
@@ -90,7 +90,7 @@ export default function SignUp() {
         <p className="mt-8 text-xs font-bold text-center text-gray-700">
           {" "}
           Already have an account? {""}
-          <a href="/" className="font-medium text-purple-600 hover:underline">
+          <a href="/login" className="font-medium text-purple-600 hover:underline">
             Login
           </a>
         </p>
