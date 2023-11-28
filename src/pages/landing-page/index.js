@@ -4,7 +4,7 @@ import Contact from "./components/contact/index";
 
 export function Header() {
     return (
-      <div>
+      <div className="">
       <Home/>
 <center> <hr className="mb-4 h-1.5 w-1/4 bg-gray-600" /></center>
 <section className="bg-white border-b py-8">

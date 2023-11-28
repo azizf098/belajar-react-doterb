@@ -15,9 +15,6 @@ function SingleProduk() {
   if (isLoading) {
     return (
       <div>
-        <br></br>
-        <br></br>
-        <br></br>
         <div class="flex justify-center items-center h-full">
           <img
             class="h-16 w-16"
@@ -84,11 +81,10 @@ function SingleProduk() {
                   </div>
 
                   <div class="lg:col-span-2 lg:row-span-2 lg:row-end-2">
-                    <h1 class="sm: text-2xl font-bold text-gray-900 sm:text-3xl">
+                    <h1 class="sm: text-2xl font-bold text-gray-900 sm:text-3xl mb-5">
                       {title}
                     </h1>
                     <hr/>
-                    <br></br>
                     <div class="lg:col-span-2 lg:row-span-2 lg:row-end-2">
                     <h5 className="text-sm capitalize text-gray-700 mb-1">
                   {category}
@@ -193,9 +189,6 @@ function SingleProduk() {
                       <div class="flex items-end">
                         <h1 class="text-3xl font-bold">Rp.{price}</h1>
                       </div>
-                      <br></br>
-                      <br></br>
-                      <br></br>
                       <div>
                         <button
                           onClick={() => addToCart(product)}

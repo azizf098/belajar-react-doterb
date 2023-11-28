@@ -8,9 +8,6 @@ const MainLayout = ({ children }) => {
     <div>
       <div>
         <Header />
-        <br></br>
-        <br></br>
-        <br></br>
         <Footer />
       </div>
       <main>{children}</main>

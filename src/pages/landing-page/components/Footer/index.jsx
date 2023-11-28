@@ -2,20 +2,18 @@ import React from "react";
 
 export function Footer(hasMargin) {
   return (
-    <div>
+    <div className="container mx-auto w-full">
       <footer
         className="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left"
-        style={hasMargin ? { marginLeft: "5rem" } : {}}
+       
       >
-        {/* <!-- Main container div: holds the entire content of the footer, including four sections (Tailwind Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. --> */}
         <div className="mx-6 py-10 text-center md:text-left">
-          <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {/* <!-- Tailwind Elements section --> */}
+          <div className="grid-1 grid gap-1 md:grid-cols-2 lg:grid-cols-4">
             <div className="">
-              <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+              <h6 className="mb-2 flex items-center justify-center font-semibold uppercase md:justify-start">
                 <img
                   alt=""
-                  className="h-8 mr-3"
+                  className="h-8 mr-2"
                   src="https://th.bing.com/th/id/OIP.x80UhvL6HqBiVLNgLqDC5AAAAA?pid=ImgDet&w=360&h=360&rs="
                 />
                 Cloverisk.
@@ -23,32 +21,39 @@ export function Footer(hasMargin) {
               <p>
                 Here you can use buy shoes with price discount in everyday,
                 let's find your favorite shoes and buy it, make ur style so
-                cool.
+                cool. BUY NOW!
               </p>
             </div>
-            {/* <!-- Products section --> */}
             <div className="">
               <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
                 Products
               </h6>
-              <p className="mb-4">
+              <p className="mb-2">
+                <a className="text-neutral-600 dark:text-neutral-200">Jewelery</a>
+              </p>
+              <p className="mb-2">
+                <a className="text-neutral-600 dark:text-neutral-200">Electronics</a>
+              </p>
+              <p className="mb-2">
+                <a className="text-neutral-600 dark:text-neutral-200">Shirt</a>
+              </p>
+              <p className="mb-2">
                 <a className="text-neutral-600 dark:text-neutral-200">Shoes</a>
               </p>
             </div>
-            {/* <!-- Useful links section --> */}
             <div className="">
               <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
                 Menu Other
               </h6>
-              <p className="mb-4">
+              <p className="mb-2">
                 <a className="text-neutral-600 dark:text-neutral-200">Home</a>
               </p>
-              <p className="mb-4">
+              <p className="mb-2">
                 <a className="text-neutral-600 dark:text-neutral-200">
                   Product
                 </a>
               </p>
-              <p className="mb-4">
+              <p className="mb-2">
                 <a className="text-neutral-600 dark:text-neutral-200">
                   Contact
                 </a>
@@ -57,12 +62,11 @@ export function Footer(hasMargin) {
                 <a className="text-neutral-600 dark:text-neutral-200">Help</a>
               </p>
             </div>
-            {/* <!-- Contact section --> */}
             <div>
               <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
                 Contact
               </h6>
-              <p className="mb-4 flex items-center justify-center md:justify-start">
+              <p className="mb-2 flex items-center justify-center md:justify-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -74,7 +78,7 @@ export function Footer(hasMargin) {
                 </svg>
                 Jl. Batununggal
               </p>
-              <p className="mb-4 flex items-center justify-center md:justify-start">
+              <p className="mb-2 flex items-center justify-center md:justify-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -86,7 +90,7 @@ export function Footer(hasMargin) {
                 </svg>
                 cloverisk@cloverisk.com
               </p>
-              <p className="mb-4 flex items-center justify-center md:justify-start">
+              <p className="mb-2 flex items-center justify-center md:justify-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"

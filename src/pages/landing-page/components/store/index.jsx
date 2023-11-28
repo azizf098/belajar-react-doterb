@@ -18,9 +18,6 @@ function Shop(hasMargin) {
   if (isLoading) {
     return (
       <div>
-        <br></br>
-        <br></br>
-        <br></br>
         <div class="flex justify-center items-center h-full">
           <img
             class="h-16 w-16"
@@ -36,15 +33,16 @@ function Shop(hasMargin) {
     deleteProduct.mutate(productId);
   };
   return (
-    <div>
-      <br></br>
+    <div className="">
       <center>
-        <h2 className="bg-teal-accent-400 mb-2 inline-block rounded-full px-3 py-px text-lg-20 font-semibold uppercase tracking-wider text-black-900">
-          List Product
+      <div className="py-5 sm:max-w-xl m-auto items-center">
+        <h2 className="bg-teal-accent-400 mb-w inline-block rounded-full px-3 py-px-8 text-lg-20 font-semibold uppercase tracking-wider text-black-900">
+        List Product
         </h2>
         <hr className="mb-4 h-1.5 w-1/4 bg-green-300" />
-      </center>
-      <div className="grid md:grid-cols-3 gap-8 mt-10 pl-5">
+        </div>
+        </center>
+      <div className="grid md:grid-cols-3 gap-8 mt-10 pl-5 max-w-fit mx-auto">
         {filteredProducts.map((produk) => {
           return (
             <div
@@ -136,9 +134,6 @@ function Shop(hasMargin) {
           );
         })}
       </div>
-      <br></br>
-      <br></br>
-      <br></br>
       <Footer />
     </div>
   );

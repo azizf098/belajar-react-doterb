@@ -2,7 +2,7 @@ import React from "react";
 const Home = (props) => {
   return (
     <div>
-      <div className="w-full">
+      <div className="w-full max-width">
         <div className="relative mx-auto flex flex-col px-4 sm:max-w-xl md:max-w-screen-xl md:flex-row">
           <div className="my-auto mx-auto mt-8 w-full max-w-xl md:mt-56 lg:max-w-screen-xl ">
             <div className="mb-16 lg:mb-0 lg:max-w-lg">
@@ -12,9 +12,8 @@ const Home = (props) => {
                     <u>Road To Shopping</u>
                   </p>
                 </div>
-                <h2 className="mb-6 max-w-lg text-3xl font-bold tracking-tight text-slate-700 sm:text-5xl sm:leading-snug">
+                <h2 className="mb-8 max-w-lg text-3xl font-bold tracking-tight text-slate-700 sm:text-5xl sm:leading-snug">
                   Disc All Product
-                  <br />
                   <span className="inline-block font-bold text-gray-800">
                     Only One Day
                   </span>
@@ -26,7 +25,7 @@ const Home = (props) => {
               </div>
               <div className="flex items-center">
                 <a
-                  href="/"
+                  href="/shop"
                   class="mr-6 inline-flex h-12 items-center justify-center rounded bg-green-600 px-6 font-bold tracking-wide text-black shadow-md outline-none transition duration-200 hover:bg-indigo-400 focus:ring"
                 >
                   {" "}
@@ -78,7 +77,7 @@ const Home = (props) => {
           Promo Sale
         </h2>
       </center>
-      <div className="grid grid-cols-3 gap-3 m-14">
+      <div className="grid grid-cols-3 gap-3 m-14 max-w-fit mx-auto">
         <div className="relative m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
           <img
             className="h- rounded-t-lg object-cover"

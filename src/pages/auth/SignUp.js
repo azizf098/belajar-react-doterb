@@ -3,8 +3,8 @@ import Footer from "../landing-page/components/footer";
 
 export default function SignUp() {
   return (
-    <div>
-      <br></br><br></br>
+    <div className="">
+      <div class="relative py-10 sm:max-w-xl sm:mx-auto">
       <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl shadow-rose-600/40 ring ring-2 ring-purple-600 lg:max-w-xl">
         <div className="flex justify-center">
           <img
@@ -95,7 +95,7 @@ export default function SignUp() {
           </a>
         </p>
       </div>
-      <br></br>
+      </div>
       <Footer />
     </div>
   );
